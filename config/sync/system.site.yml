@@ -1,0 +1,14 @@
+uuid: da9cd997-1ad6-467d-a1a5-cb2de4bc7051
+name: 'Mia Brummer'
+mail: mia@miasellsatlantahomes.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

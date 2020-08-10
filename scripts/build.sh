@@ -1,5 +1,5 @@
 #!/bin/bash
-# build monika on OVH3 or local
+# build mia on OVH3 or local
 
 set -xe
 

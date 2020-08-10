@@ -55,4 +55,4 @@ function do_dump() {
 }
 
 [ $(uname) == Linux ] && DUMP=do_dump_san || DUMP=do_dump
-$DUMP monika
+$DUMP mia
