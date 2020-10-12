@@ -12,7 +12,7 @@ id: landing_page
 title: 'Landing Page'
 description: ''
 category: ''
-elements: null
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#title_display': invisible\n  '#placeholder': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#placeholder': Email\nphone:\n  '#type': tel\n  '#title': Phone\n  '#title_display': invisible\n  '#placeholder': Phone\n  '#required': true\n  '#required_error': 'Please enter your contact number'\n  '#international': true\n  '#international_initial_country': US\nlooking_to_sell_in_:\n  '#type': select\n  '#title': 'Looking to sell in ...'\n  '#title_display': invisible\n  '#options':\n    'option 1': 'Looking to sell in ...'\n    'option 2': 'Looking to sell in less than 3 months'\n    'option 3': 'Looking to sell in 3 to 6 months'\n    'option 4': 'Looking to sell in 6 months to 1 year'\n    'option 5': 'Looking to sell in 1 year or more'\n    'option 6': 'Not sure when to sell'\n  '#empty_option': 'Looking to sell in ...'\n  '#required': true\ncomments_questions:\n  '#type': textarea\n  '#title': 'Comments / Questions'\n  '#title_display': invisible\n  '#placeholder': 'Comments / Questions'\ncaptcha:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
 css: ''
 javascript: ''
 settings:
@@ -187,5 +187,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: 'Landing Page'
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: mia-direct@ziquid.com
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: mia-direct@ziquid.com
+      from_options: {  }
+      from_name: 'Mia Brummer'
+      subject: _default
+      body: '[webform_submission:values]'
+      excluded_elements:
+        captcha: captcha
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }
